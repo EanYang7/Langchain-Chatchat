@@ -1,11 +1,10 @@
 ![](img/logo-long-chatchat-trans-v2.png)
 
-
-🌍 [READ THIS IN ENGLISH](README_en.md)
-
 📃 **LangChain-Chatchat** (原 Langchain-ChatGLM)
 
 基于 ChatGLM 等大语言模型与 Langchain 等应用框架实现，开源、可离线部署的检索增强生成(RAG)大模型知识库项目。
+
+> 在线文档：https://eanyang7.github.io/Langchain-Chatchat
 
 ---
 
@@ -24,7 +23,7 @@
 
 ## 介绍
 
-🤖️ 一种利用 [langchain](https://github.com/hwchase17/langchain) 思想实现的基于本地知识库的问答应用，目标期望建立一套对中文场景与开源模型支持友好、可离线运行的知识库问答解决方案。
+🤖️ 一种利用 [langchain](https://github.com/langchain-ai/langchain) 思想实现的基于本地知识库的问答应用，目标期望建立一套对中文场景与开源模型支持友好、可离线运行的知识库问答解决方案。
 
 💡 受 [GanymedeNil](https://github.com/GanymedeNil) 的项目 [document.ai](https://github.com/GanymedeNil/document.ai) 和 [AlexZhangji](https://github.com/AlexZhangji) 创建的 [ChatGLM-6B Pull Request](https://github.com/THUDM/ChatGLM-6B/pull/216) 启发，建立了全流程可使用开源模型实现的本地知识库问答应用。本项目的最新版本中通过使用 [FastChat](https://github.com/lm-sys/FastChat) 接入 Vicuna, Alpaca, LLaMA, Koala, RWKV 等模型，依托于 [langchain](https://github.com/langchain-ai/langchain) 框架支持通过基于 [FastAPI](https://github.com/tiangolo/fastapi) 提供的 API 调用服务，或使用基于 [Streamlit](https://github.com/streamlit/streamlit) 的 WebUI 进行操作。
 
@@ -52,7 +51,9 @@
 docker run -d --gpus all -p 80:8501 registry.cn-beijing.aliyuncs.com/chatchat/chatchat:0.2.7
 ```
 
-🧩 本项目有一个非常完整的[Wiki](https://github.com/chatchat-space/Langchain-Chatchat/wiki/) ， README只是一个简单的介绍，__仅仅是入门教程，能够基础运行__。 如果你想要更深入的了解本项目，或者想对本项目做出贡献。请移步 [Wiki](https://github.com/chatchat-space/Langchain-Chatchat/wiki/)  界面
+🧩 README只是一个简单的介绍，__仅仅是入门教程，能够基础运行__。 
+
+如果你想要更深入的了解本项目，请浏览[在线文档](https://eanyang7.github.io/Langchain-Chatchat)
 
 ## 解决的痛点
 
@@ -60,7 +61,7 @@ docker run -d --gpus all -p 80:8501 registry.cn-beijing.aliyuncs.com/chatchat/ch
 本开源方案采用```Apache License```，可以免费商用，无需付费。
 
 我们支持市面上主流的本地大预言模型和Embedding模型，支持开源的本地向量数据库。
-支持列表详见[Wiki](https://github.com/chatchat-space/Langchain-Chatchat/wiki/)
+支持列表详见[在线文档](https://eanyang7.github.io/Langchain-Chatchat)
 
 
 ## 快速上手
@@ -74,7 +75,6 @@ Python 3.10.12
 ```
 接着，创建一个虚拟环境，并在虚拟环境内安装项目的依赖
 ```shell
-
 # 拉取仓库
 $ git clone https://github.com/chatchat-space/Langchain-Chatchat.git
 
@@ -107,7 +107,7 @@ $ git clone https://huggingface.co/moka-ai/m3e-base
 ```shell
 $ python copy_config_example.py
 $ python init_database.py --recreate-vs
- ```
+```
 ### 4. 一键启动
 
 按照以下命令启动项目
@@ -135,25 +135,5 @@ $ python startup.py -a
 
 ### 注意
 
-以上方式只是为了快速上手，如果需要更多的功能和自定义启动方式 ，请参考[Wiki](https://github.com/chatchat-space/Langchain-Chatchat/wiki/)
+以上方式只是为了快速上手，如果需要更多的功能和自定义启动方式 ，请参考[在线文档](https://eanyang7.github.io/Langchain-Chatchat)
 
-
----
-## 项目里程碑
-
-
----
-## 联系我们
-### Telegram
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white "langchain-chatglm")](https://t.me/+RjliQ3jnJ1YyN2E9)
-
-### 项目交流群
-<img src="img/qr_code_76.jpg" alt="二维码" width="300" />
-
-🎉 Langchain-Chatchat 项目微信交流群，如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流。
-
-### 公众号
-
-<img src="img/official_wechat_mp_account.png" alt="二维码" width="300" />
-
-🎉 Langchain-Chatchat 项目官方公众号，欢迎扫码关注。

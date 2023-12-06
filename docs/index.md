@@ -1,7 +1,4 @@
-
-![](https://github.com/chatchat-space/Langchain-Chatchat/blob/master/img/logo-long-chatchat-trans-v2.png)
-
-> 欢迎来到 Langchain‐Chatchat 的 Wiki , 在这里开启 Langchain 与大模型的邂逅!
+![img](./index.assets/logo-long-chatchat-trans-v2.png)
 
 
 ## 项目简介
@@ -19,17 +16,15 @@
 
 ## 算法流程
 
-大家可以前往Bilibili平台查看原理介绍视频：
-
 📺 [原理介绍视频](https://www.bilibili.com/video/BV13M4y1e7cN/?share_source=copy_web&vd_source=e6c5aafe684f30fbe41925d61ca6d514)
 
-开发组也为大家绘制了一张实现原理图，效果如下：
+实现原理图：
 
-![实现原理图](https://github.com/chatchat-space/Langchain-Chatchat/blob/master/img/langchain+chatglm.png)
+![实现原理图](./index.assets/langchain+chatglm.png) 
 
 从文档处理角度来看，实现流程如下：
 
-![实现原理图2](https://github.com/chatchat-space/Langchain-Chatchat/blob/master/img/langchain+chatglm2.png)
+![实现原理图2](./index.assets/langchain+chatglm2.png)
 
 
 ## 技术路线图
